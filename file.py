@@ -8,6 +8,7 @@ data = {
 rel_list = [('a', 'b'), ('a', 'c'), ('c', 'd')]
 
 df = pd.DataFrame(data)
+df = pp
 
 for rel_tuple in rel_list:
   head = rel_tuple[0]
@@ -16,3 +17,5 @@ for rel_tuple in rel_list:
   df.loc[df.names == head, 'relations'] = tail
 
 print(df)
+
+
